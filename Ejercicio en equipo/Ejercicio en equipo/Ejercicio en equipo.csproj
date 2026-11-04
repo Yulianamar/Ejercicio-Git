@@ -71,8 +71,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+feat/dolares
     <EmbeddedResource Include="ConvierteDinero.resx">
       <DependentUpon>ConvierteDinero.cs</DependentUpon>
+    <EmbeddedResource Include="Distancia.resx">
+      <DependentUpon>Distancia.cs</DependentUpon>
+main
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
