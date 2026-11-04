@@ -28,5 +28,18 @@ namespace Ejercicio_en_equipo
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void BtnCalcularClick(object sender, EventArgs e)
+		{
+			double lblX1 = Convert.ToDouble(txtx1.Text);
+			double lblX2 = Convert.ToDouble(txtx2.Text);
+			double lblY1 = Convert.ToDouble(txty1.Text);
+			double lblY2 = Convert.ToDouble(txty2.Text);
+			double d = 0.0;
+			
+			d = Math.Sqrt(((lblX1 - lblX2) * (lblX1 - lblX2)) + ((lblY1 - lblX2) * (lblY1 - lblY2)));
+			              
+			lblRespuesta.Text = "La distancia entre los dos puntos es de: " + d;
+		}
 	}
 }
