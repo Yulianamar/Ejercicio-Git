@@ -17,6 +17,8 @@ namespace Ejercicio_en_equipo
 	/// </summary>
 	public partial class ConvierteDinero : Form
 	{
+		double cambio=18.50;
+		
 		public ConvierteDinero()
 		{
 			//
@@ -27,6 +29,31 @@ namespace Ejercicio_en_equipo
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
+		}
+		
+		void BtnpesosClick(object sender, EventArgs e)
+		{
+			double cantidad = Convert.ToDouble(txtCantidad.Text);
+			double resultado = cantidad / cambio;
+			lblResultado.Text = resultado.ToString();
+		}
+		
+		void BtndolaresClick(object sender, EventArgs e)
+		{
+			double cantidad = Convert.ToDouble(txtCantidad.Text);
+			double resultado = cantidad * cambio;
+			lblResultado.Text = resultado.ToString();
+		}
+		
+		void BtnlimpiarClick(object sender, EventArgs e)
+		{
+			txtCantidad.Clear();
+			lblResultado.Text = "Resultado";
+		}
+		
+		void BtnsalirClick(object sender, EventArgs e)
+		{
+			Close();
 		}
 	}
 }
